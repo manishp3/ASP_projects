@@ -1,0 +1,69 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+    <table border="2" width="100%">
+    <tr>
+        <td width="20%">
+            <img alt="fgf" src="img/1.jpg" style="width: 275px; height: 183px" /></td>
+        <td width="60%"><center>College mgt system</center></td>
+        <td width="20%">
+            <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="XmlDataSource1" />
+            <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/XMLFile.xml">
+            </asp:XmlDataSource>
+                    </td>
+    </tr>
+    <tr>
+        <td colspan="3" style="width: 40%">
+            <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3" 
+                DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                <StaticSelectedStyle BackColor="#5D7B9D" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <DynamicMenuStyle BackColor="#F7F6F3" />
+                <DynamicSelectedStyle BackColor="#5D7B9D" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Admission.aspx" Text="Admission" Value="Admission">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" Value="About">
+                    </asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" style="width: 40%">
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%">Tree View</td>
+        <td width="60%">
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </td>
+        <td width="20%">Counter</td>
+        <tr>
+        <td colspan="3" style="width: 40%"></td>
+    
+    </tr>
+</table>
+    </form>
+</body>
+</html>

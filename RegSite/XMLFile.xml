@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+
+  <Ad>
+    <ImageUrl>~/img/1.jpg</ImageUrl>
+    <NavigateUrl>https://www.tcs.com</NavigateUrl>
+    <AlterneteText>tcs</AlterneteText>
+    <Keyword>tcs</Keyword>
+    <Impressions>10</Impressions>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+
+  <Ad>
+    <ImageUrl>~/img/1.jpg</ImageUrl>
+    <NavigateUrl>https://tcs.com</NavigateUrl>
+    <AlterneteText>NO omre</AlterneteText>
+    <Keyword>nature</Keyword>
+    <Impressions>10</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/2.jpg</ImageUrl>
+    <NavigateUrl>https://tcs.com</NavigateUrl>
+    <AlterneteText>NO omre</AlterneteText>
+    <Keyword>nature</Keyword>
+    <Impressions>10</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/3.jpg</ImageUrl>
+    <NavigateUrl>https://tcs.com</NavigateUrl>
+    <AlterneteText>NO omre</AlterneteText>
+    <Keyword>nature</Keyword>
+    <Impressions>10</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/4.jpg</ImageUrl>
+    <NavigateUrl>https://tcs.com</NavigateUrl>
+    <AlterneteText>NO omre</AlterneteText>
+    <Keyword>nature</Keyword>
+    <Impressions>10</Impressions>
+  </Ad>
+</Advertisements>
